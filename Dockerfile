@@ -1,5 +1,5 @@
 FROM mysql:5.7
 
-ADD waitForSql.sh /root/
+ADD waitForSql.sh /usr/local/bin/
 
-RUN chmod +x /root/waitForSql.sh
+RUN chmod +x /usr/local/bin/waitForSql.sh
