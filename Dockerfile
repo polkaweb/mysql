@@ -1,5 +1,5 @@
 FROM mysql:5.7
 
-ADD waitForSql.sh /usr/local/bin/
+COPY docker-healthcheck /usr/local/bin/
 
-RUN chmod +x /usr/local/bin/waitForSql.sh
+HEALTHCHECK CMD ["docker-healthcheck"]
